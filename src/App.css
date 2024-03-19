@@ -1,3 +1,9 @@
+
+
+body {
+  background-color: #fff; 
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +45,38 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Styles for HomePage */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr)); 
+  grid-gap: 30px; 
+  text-align: center;
+}
+
+.big-button {
+  padding: 10px; 
+  border: none; 
+  background-color: transparent; 
+  position: relative; 
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.big-button:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.big-button img {
+  width: 50%; 
+  height: auto; 
+  border-radius: 8px; 
 }
